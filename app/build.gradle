@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
+    compileSdkVersion 23
     buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "yourbay.me.testsamba"
-        minSdkVersion 11
-        targetSdkVersion 21
+        minSdkVersion 14
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -39,6 +39,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':dialogplusss')
+    compile 'com.maksim88:PasswordEditText:v0.9'
+    compile 'com.xw.repo:xedittext:1.0.6@aar'
 }
 
