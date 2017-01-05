@@ -77,9 +77,13 @@ public class SambaActivity extends Activity {
             try {
                 final String path = removeHost(file.getPath());
                 if (file.isDirectory()) {
-                    FOLDER.put(new StringBuilder(REMOTE_FOLDER_PREFIX).append(path).toString(), file);
+                    String s = new StringBuilder(REMOTE_FOLDER_PREFIX).append(path).toString();
+                    s  = new String(s.getBytes(),"GBK");
+                    FOLDER.put(s, file);
                 } else {
-                    FILE.put(new StringBuilder(REMOTE_FILE_PREFIX).append(path).toString(), file);
+                    String s =  new StringBuilder(REMOTE_FILE_PREFIX).append(path).toString();
+                    s  = new String(s.getBytes(),"GBK");
+                    FILE.put(s, file);
                 }
             } catch (Exception e) {
                 e.printStackTrace();

@@ -8,7 +8,7 @@ import qpsamba.IConfig;
 public class DefaultConfig extends IConfig {
 
     public DefaultConfig() {
-        super("192.168.2.79", "ram", "1234", "RAM-ELEM");
+        super("192.168.10.225", "samba", "samba", "samba");
     }
 
 }
