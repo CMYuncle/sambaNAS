@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 
+
 android {
     compileSdkVersion 23
     buildToolsVersion "21.1.2"
@@ -43,5 +44,6 @@ dependencies {
     compile project(':dialogplusss')
     compile 'com.maksim88:PasswordEditText:v0.9'
     compile 'com.xw.repo:xedittext:1.0.6@aar'
+    compile 'com.jakewharton:butterknife:7.0.1'
 }
 

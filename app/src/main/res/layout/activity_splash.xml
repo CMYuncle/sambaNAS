@@ -7,6 +7,61 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Samba"
+        android:textSize="33dp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
         />
 
+    <com.xw.repo.xedittext.XEditText
+        android:id="@+id/splash_ip"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="192.168.0.1"
+        android:paddingLeft="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:layout_marginTop="30dp"
+        />
+
+    <com.xw.repo.xedittext.XEditText
+        android:id="@+id/splash_samba_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/white"/>
+
+    <com.maksim88.passwordedittext.PasswordEditText
+        android:id="@+id/splash_samba_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"/>
+
+    <Button
+        android:id="@+id/splash_start_samba"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="开始管理"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        />
 </LinearLayout>
